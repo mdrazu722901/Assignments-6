@@ -14,20 +14,78 @@
 </head>
 
 <body>
-    <section class="mainSection">
-        <nav class="flex justify-between">
+    <div class="mainSection p-8">
+        <section>
+            <nav class="flex justify-between">
+                <div class="font-bold">
+                    <h1>Md.Razu</h1>
+                </div>
+                <div class="">
+                    <div class="tooltip" data-tip="Home">
+                        <i class="fa-solid fa-house mx-2 bg-gray-200 p-3 rounded-full"></i>
+                    </div>
+                    <div class="tooltip" data-tip="Edit">
+                        <i class="fa-regular fa-pen-to-square mx-2 bg-gray-200 p-3 rounded-full"></i>
+                    </div>
+                    <div class="tooltip" data-tip="Account">
+                        <i class="fa-solid fa-user mx-2 bg-gray-200 p-3 rounded-full"></i>
+                    </div>
+                    <div class="tooltip" data-tip="Flag">
+                        <i class="fa-brands fa-font-awesome mx-2 bg-gray-200 p-3 rounded-full"></i>
+                    </div>
+                    <button
+                        class="bg-blue-800 p-2 text-bold text-white rounded-s-full rounded-r-full py-2 px-8 x-8">Sign
+                        in</button>
+                </div>
+            </nav>
+        </section>
+        <section class="bg-[url(/images/to.png)] bg-no-repeat bg-center bg-cover bg-center rounded m-5">
+            <div class="p-40 text-white flex justify-between">
+                <div>
+                    <div class="text-xl text-bold">
+                        <h1>wellcome to the</h1>
+                        <h1 class="font-bold"><span class="text-orange-700 pr-2">Razu</span>Forum</h1>
+                        <p>Shar Your Favourite Opinion and win and wp</p>
+                        <p>Forum Coffee mug!</p>
+                    </div>
+                    <label class="input input-bordered flex items-center gap-2 rounded">
+                        <input type="text" class="grow" placeholder="Search here anything" />
+                        <span class="badge badge-info p-4 text-white">Search</span>
+                    </label>
+                </div>
+                <div class="bg-white text-black p-10 rounded">
+                    <h1 class="gap-2">Registered Users <span class="pl-10">01</span></h1>
+                    <h1 class="gap-2">Forum <span class="pl-28">01</span></h1>
+                    <h1 class="gap-2">Topics <span class="pl-28">01</span></h1>
+                    <h1 class="gap-2">Replies<span class="pl-28">01</span></h1>
+                </div>
+            </div>
+        </section>
+        <section>
             <div>
-                <h1>Md.Razu</h1>
+                <div class="text-center">
+                    <h1>Let's Discuss</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse laborum neque assumenda
+                        voluptates dolorem? Consectetur quas cum mollitia, <br> esse illum accusamus numquam nisi veniam
+                        tempore
+                        fugiat! Facere, ipsa? Perferendis.</p>
+                </div>
             </div>
-            <div class="">
-                <i class="fa-solid fa-house mx-2 bg-gray-200 p-3 rounded-full"></i>
-                <i class="fa-regular fa-pen-to-square mx-2 bg-gray-200 p-3 rounded-full"></i>
-                <i class="fa-solid fa-user mx-2 bg-gray-200 p-3 rounded-full"></i>
-                <i class="fa-brands fa-font-awesome mx-2 bg-gray-200 p-3 rounded-full"></i>
-                <button class="bg-blue-800 p-2 text-bold text-white rounded-s-full rounded-r-full">Sign in</button>
+        </section>
+        <section class="flex px-4 m-2">
+            <div id="single-card" class="w-50">
+             <!-- card -->
             </div>
-        </nav>
-    </section>
+            <div class="bg-pink-100 rounded">
+               <div class="flex p-4">
+                 <p class="pr-28">title</p>
+                 <p class="pl-28">make as read</p>
+               </div>
+               <div id="mark-card">
+               </div>
+            </div>
+        </section>
+    </div>
     <script src="index.js"></script>
 </body>
 
