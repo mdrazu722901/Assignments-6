@@ -39,7 +39,7 @@
                 </div>
             </nav>
         </section>
-        <section class="bg-[url(/images/to.png)] bg-no-repeat bg-center bg-cover bg-center rounded m-5">
+        <section class="bg-[url(/images/to.png)] bg-no-repeat bg-cover bg-center rounded m-5">
             <div class="p-40 text-white flex justify-between">
                 <div>
                     <div class="text-xl text-bold">
@@ -48,9 +48,9 @@
                         <p>Shar Your Favourite Opinion and win and wp</p>
                         <p>Forum Coffee mug!</p>
                     </div>
-                    <label class="input input-bordered flex items-center gap-2 rounded">
-                        <input type="text" class="grow" placeholder="Search here anything" />
-                        <span class="badge badge-info p-4 text-white">Search</span>
+                    <label class="input input-bordered flex items-center gap-20">
+                        <input type="text" class="text-black" placeholder="Search" id="searchFild" />
+                        <span class="badge badge-info p-4 text-white" onclick="searchItem()">Search</span>
                     </label>
                 </div>
                 <div class="bg-white text-black p-10 rounded">
@@ -74,15 +74,61 @@
         </section>
         <section class="flex px-4 m-2">
             <div id="single-card" class="w-50">
-             <!-- card -->
+                <!-- card -->
+
+            </div>
+            <div class="border bg-red-200  w-50 text-center text-bold hidden p-28 mr-44"  id="errorMassage">
+                <h1 class="text-4xl">Typing Error please Type Correctly <br> Or Wait for Data Load</h1>
             </div>
             <div class="bg-pink-100 rounded">
-               <div class="flex p-4">
-                 <p class="pr-28">title</p>
-                 <p class="pl-28">make as read</p>
-               </div>
-               <div id="mark-card">
-               </div>
+                <div class="flex p-4">
+                    <p class="pr-28">title</p>
+                    <p class="pl-28">make as read(<span id="readCount">0</span>)</p>
+                </div>
+                <div id="mark-card">
+                </div>
+            </div>
+        </section>
+        <section class="bg-black rounded-lg m-10">
+            <div class="p-10 text-white flex justify-between">
+                <div>
+                    <div class="text-bold mt-20 pb-10">
+                        <h1 class="text-6xl font-bold">Join Our Forum</h1>
+                        <p>Shar Your Favourite Opinion and win and wp</p>
+                        <p>Forum Coffee mug!</p>
+                    </div>
+                    <button class="btn btn-primary">Registered Now</button>
+                </div>
+                <div>
+                    <img src="images/joinforum.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="text-center">
+                <h1 class="font-bold text-4xl">Latest Posts</h1>
+                <p>Yes, you can run unit tests and view the results directly within the app. The </p>
+                <p>integrated testing features allow for a streamlined .</p>
+            </div>
+            <div id="latestSection" class="flex p-2">
+                <!-- Latest posts here -->
+            </div>
+        </section>
+        <section class="py-20 bg-pink-100 mt-10">
+            <div class="text-center">
+                <h1 class="font-bold text-4xl">ReTro</h1>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a </p>
+                <p>piece of classical Latin literature from 45 BC</p>
+            </div>
+            <div class="flex items-center justify-center pt-20 gap-10">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <hr />
+            <div class="text-center pt-20">
+                <h1>2017, All Rights Reserved.</h1>
             </div>
         </section>
     </div>
