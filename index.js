@@ -122,10 +122,11 @@ latestPosts();
 const latestSinglePost = (data) => {
     const mainDiv = document.getElementById("latestSection");
     data.forEach(element => {
+        console.log(element);
         const newDiv = document.createElement("div");
         newDiv.innerHTML = `
         
-        <div class="card bg-base-100 w-96 shadow-xl mx-2">
+        <div class="card bg-base-100 w-80 ml-16 shadow-xl mx-2">
             <figure>
                 <img
                 src="${element.cover_image}"
@@ -136,7 +137,7 @@ const latestSinglePost = (data) => {
                     <i class="fa-solid fa-calendar-days pr-2"></i> 
                     <span>${element.author.posted_date ? element.author.posted_date : "No Data Found"}</span>
                </div>
-                <h2 class="card-title text-2xl font-bold">Shoes!</h2>
+                <h2 class="card-title text-2xl font-bold">${element.author.name}</h2>
                 <h2 class="font-bold">${element.title}</h2>
                 <p>${element.description}</p>
 
